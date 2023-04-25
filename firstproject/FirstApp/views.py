@@ -14,3 +14,18 @@ def display(request): #view-function
 		''';
 	
 	return HttpResponse(ss);
+
+
+
+#default-url-request-view-func
+def homepage(request):
+    htmldata='''<center>
+        <h1 style='color:blue;background-color:yellow;'>Welcome to DEFAULT Home-Page!!!</h1>
+        <hr color='brown'/>
+        <h2 style='color:green;background-color:cyan;'>Your Request Page is Not-Found...</h2>
+        <hr color='brown'/>
+        <h3 style='color:red;background-color:plum;'>Plz try other URL or Links!!!</h3>
+		<hr color='brown'/>
+    </center>''';
+    return HttpResponse(htmldata);
+
